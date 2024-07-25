@@ -10,7 +10,7 @@ class M_Login extends CI_Model {
 
     public function check_login($username, $password) {
         $this->db->where('username', $username);
-        $this->db->where('password', md5($password));  // Assuming the password is hashed with MD5
+        $this->db->where('password', md5($password)); 
         $query = $this->db->get('users');
 
         if ($query->num_rows() == 1) {
