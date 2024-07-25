@@ -34,9 +34,9 @@
                     success: function(response){
                         console.log('Response:', response);
                         if(response.status == 'success'){
-                            $('#message').html('<p>Login successful!</p>');
+                            $('#message').html('Login successful');
                         } else {
-                            $('#message').html('<p>Invalid username or password</p>');
+                            $('#message').html('Invalid username or password');
                         }
                     },
                 
